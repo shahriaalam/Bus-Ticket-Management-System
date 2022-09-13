@@ -25,9 +25,7 @@ public class TotalSell
         A1.setBounds(300, 250, 390, 40);
         A1.setForeground(Color.BLACK);
         A1.setFont(fh);
-        A1.setOpaque(true);
-        A1.setBackground(Color.white);
-
+        
         a.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent e)
@@ -58,6 +56,8 @@ public class TotalSell
                         sum+=P1;
                     }
                     A1.setText("Total Ticket Sell: "+sum+" TK");
+                    A1.setOpaque(true);
+                    A1.setBackground(Color.white);
                     A.close();
                 }
                 catch (FileNotFoundException ex)
